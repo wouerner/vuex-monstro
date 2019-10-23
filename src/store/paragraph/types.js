@@ -1,0 +1,1 @@
+export const UPDATE_PARAGRAPH = 'UPDATE_PARAGRAPH';
