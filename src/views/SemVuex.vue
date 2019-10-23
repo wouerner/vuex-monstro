@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <h1>
+      titulo: {{getTitle}}
+    </h1>
       <!-- Mostram as informações cadastradas -->
       Sem Vuex
       <paragraph :value="paragraph"></paragraph>
@@ -31,7 +34,8 @@ export default {
   },
   computed:{
     ...mapGetters({
-      getParagraph: 'paragraph/get'
+      getParagraph: 'paragraph/get',
+      getTitle: 'title/get'
     }),
     paragraphVuex() {
       return this.getParagraph
