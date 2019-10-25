@@ -12,6 +12,7 @@
 
       <p>Com Vuex</p>
       <paragraph :value="paragraphVuex"></paragraph>
+      {{getParagraph}}
   </div>
 </template>
 
@@ -35,7 +36,8 @@ export default {
   computed:{
     ...mapGetters({
       getParagraph: 'paragraph/get',
-      getTitle: 'title/get'
+      getTitle: 'title/get',
+      getTeste: 'teste/get'
     }),
     paragraphVuex() {
       return this.getParagraph
